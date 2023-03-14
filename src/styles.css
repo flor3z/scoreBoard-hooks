@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+  background-image: url(../src/img/court.jpg);
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Nunito Sans', sans-serif;
+  background-attachment: fixed;
+  font-weight: 600;
+  line-height: 1.7;
+  color: rgb(236, 236, 236);
+  text-shadow: 2px 2px 4px #000000;
+  box-sizing: border-box;
+}
+
+/* Team Cards Syling/////////////////////////////////////////////////////*/
+.team-cards-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.team-content {
+  /* font-size: 8rem; */
+  margin-top: 10rem;
+  width: max-content;
+  background-color: #008c76ff;
+  border-radius: 5px;
+  border: 2px solid rgb(42, 42, 42);
+  /* display: inline-block; */
+  /* top: 1rem;
+  left: 1rem; */
+  text-align: center;
+
+  animation-name: moveInTop;
+  animation-duration: 1.25s;
+  animation-timing-function: ease-out;
+}
+
+.team-content h1 {
+  font-size: 8rem;
+  font-weight: 800;
+}
+
+/* Score Input content ////////////////////////////// */
+.score-limit-container {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  position: center;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem 0rem 1rem 0rem;
+  /* border: 2px solid; */
+}
+
+.score-limit-container input {
+  width: fit-content;
+  outline: none;
+  cursor: pointer;
+  border-radius: .5rem;
+  padding: .5rem;
+  margin: 1rem 0rem 1rem 0rem;
+  text-align: center;
+}
+
+
+/* //////////////////////////////////////////// */
+
+
+.timer-container {
+  border-radius: 5px;
+  /* position: center; */
+  /* top: 4rem;
+  left: 4rem; */
+  text-align: center;
+
+  animation-name: moveInBottom;
+  animation-duration: 1.25s;
+  animation-timing-function: ease-out;
+}
+
+
+.time {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1.25rem;
+}
+
+.time-controls {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.time-controls button {
+  width: 7.65rem;
+}
+
+/* All Button Section with Effects///////////////// */
+.butn {
+  border-radius: 10rem;
+  font-size: 1.5rem;
+  margin: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  box-shadow: 3px 6px 28px 1px rgba(0, 0, 0, 0.24);
+  transition: 0.2s all;
+}
+
+.butn:active {
+  transform: scale(0.98);
+  box-shadow: 1.5px 2px 16px .25px rgba(0, 0, 0, 0.24);
+}
+
+.butn:hover {
+  background-color: rgb(34, 33, 33);
+  color: #fff;
+  cursor: pointer;
+}
+
+.button-increment{
+  width: 7.5rem;
+  font-size: 2rem;
+  /* padding: 0.25rem 0.25rem 0.25rem 2.5rem; */
+}
+
+.button-increment:hover {
+  background-color: rgb(64, 176, 64);
+}
+
+.button-decrement {
+  width: 7.5rem;
+  font-size: 2rem;
+  /* padding: 0.25rem 2.5rem 0.25rem 2.5rem; */
+}
+
+.button-decrement:hover{
+  background-color: rgb(206, 83, 83);
+}
+
+/* ///////////Team Content Section/////////// */
+.team-content {
+  /* font-size: 8rem; */
+  width: max-content;
+  background-color: #008c76ff;
+  border-radius: 5px;
+  border: 2px solid rgb(42, 42, 42);
+  /* display: inline-block; */
+  /* top: 1rem;
+  left: 1rem; */
+  text-align: center;
+
+  animation-name: moveInTop;
+  animation-duration: 1.25s;
+  animation-timing-function: ease-out;
+}
+
+
+.team-content-input {
+  font-size: 1.75rem ;
+  cursor: pointer;
+  text-align: center;
+  padding: .5rem;
+  border-radius:5px;
+  margin: 0rem .75rem 0rem .75rem;
+  width: 80%;
+}
+.team-content-input:focus {
+  outline: 2px solid rgb(129, 204, 244);
+}
+
+.team-name {
+  font-size: 3.5rem;
+}
+
+.team-content h1 {
+  font-size: 8rem;
+  font-weight: 800;
+}
+
+/* ////////////////////////////Modal Styling Below/////////////////////////// */
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.modal-container{
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+  max-width: 40rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: white;
+  font-size: 2.25rem;
+  color: #000000;
+  border-radius: 1rem;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  text-shadow: none;
+  text-align: center;
+
+}
+
+.button-container {
+  margin-top: 2rem;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-modal {
+  font-size: 1.75rem;
+  cursor: pointer;
+  padding: 1rem;
+  color: white;
+  border-radius: .5rem;
+  margin: 0 1rem 0 1rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  transition: 0.2s all;
+}
+.btn-modal:active {
+  transform: scale(0.98);
+  box-shadow: 1.5px 2px 16px .25px rgba(0, 0, 0, 0.24);
+}
+
+.reset {
+  background-color: rgb(6, 119, 248);
+  border: none;
+}
+
+.reset:hover {
+  background-color:rgb(5, 85, 176);
+}
+
+.close {
+  background-color: rgb(184, 29, 29);
+  border: none;
+}
+
+.close:hover {
+  background-color: rgb(121, 19, 19);
+}
+
+
+/* Winner Styling Below */
+
+.victory {
+  color: #fcae1e;
+  animation-name: breathEffect;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+}
+
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  80% {
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  80% {
+    transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes breathEffect {
+  0% {
+    transform: scale(0.8);
+  }
+  10% {
+    transform: scale(1.3);
+  }
+  20% {
+    transform: scale(0.8);
+  }
+  30% {
+    transform: scale(1.3);
+  }
+  40% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  60% {
+    transform: scale(0.8);
+  }
+  70% {
+    transform: scale(1.3);
+  }
+  80% {
+    transform: scale(0.8);
+  }
+  90% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
