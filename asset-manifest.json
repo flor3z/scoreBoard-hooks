@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/scoreBoard-hooks/static/css/main.2bcfa6e6.css",
+    "main.js": "/scoreBoard-hooks/static/js/main.db03447b.js",
+    "static/media/court.jpg": "/scoreBoard-hooks/static/media/court.269b2bb54718134d3604.jpg",
+    "index.html": "/scoreBoard-hooks/index.html",
+    "main.2bcfa6e6.css.map": "/scoreBoard-hooks/static/css/main.2bcfa6e6.css.map",
+    "main.db03447b.js.map": "/scoreBoard-hooks/static/js/main.db03447b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2bcfa6e6.css",
+    "static/js/main.db03447b.js"
+  ]
+}
