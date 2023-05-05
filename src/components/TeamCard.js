@@ -13,8 +13,6 @@ export function TeamCard({
   setDisplayInputValue1,
   setDisplayInputValue2,
 }) {
-  console.log(score, maxScore);
-
   if (score === maxScore) {
     setWinner(true);
   }
@@ -33,21 +31,25 @@ export function TeamCard({
 
   return (
     <div className="team-content">
-      <h1 className={score === maxScore ? 'victory' : null}>{score}</h1>
-      <button
-        name={`score${team}`}
-        className="butn button-increment"
-        onClick={(e) => addPoints(team, e.target.name)}
-      >
-        +
-      </button>
-      <button
-        className="butn button-decrement"
-        onClick={() => subtractPoints(team)}
-      >
-        -
-      </button>
-      <br />
+      <h1 className={score === maxScore ? 'score victory' : 'score'}>
+        {score}
+      </h1>
+      <div className="score-button-container">
+        <button
+          name={`score${team}`}
+          className="butn button-increment"
+          onClick={(e) => addPoints(team, e.target.name)}
+        >
+          +
+        </button>
+        <button
+          className="butn button-decrement"
+          onClick={() => subtractPoints(team)}
+        >
+          -
+        </button>
+      </div>
+
       <form onSubmit={(e) => onTeamNameSubmit(team, e)}>
         <input
           className="team-content-input"

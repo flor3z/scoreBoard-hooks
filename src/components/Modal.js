@@ -4,7 +4,6 @@ const Modal = ({ reset, onClose, open }) => {
   if (!open) return null;
   return (
     <div className="overlay">
-      {console.log(open)}
       <div className="modal-container">
         <p>
           The game has ended.

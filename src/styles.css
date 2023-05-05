@@ -9,14 +9,14 @@ html {
 }
 
 body {
+  overflow: hidden;
   height: 100%;
   background-image: url(../src/img/court.jpg);
   background-size: cover;
-  overflow: hidden;
   background-position: center;
   background-repeat: no-repeat;
-  font-family: 'Nunito Sans', sans-serif;
   background-attachment: fixed;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
   line-height: 1.7;
   color: rgb(236, 236, 236);
@@ -24,7 +24,8 @@ body {
   box-sizing: border-box;
 }
 
-/* Team Cards Syling/////////////////////////////////////////////////////*/
+/* ///////////Team Content Section/////////// */
+
 .team-cards-container {
   display: flex;
   justify-content: space-around;
@@ -32,27 +33,45 @@ body {
 }
 
 .team-content {
-  /* font-size: 8rem; */
-  margin-top: 10rem;
-  width: max-content;
+  margin-top: 1rem;
   background-color: #008c76ff;
   border-radius: 5px;
   border: 2px solid rgb(42, 42, 42);
-  /* display: inline-block; */
-  /* top: 1rem;
-  left: 1rem; */
   text-align: center;
-
   animation-name: moveInTop;
   animation-duration: 1.25s;
   animation-timing-function: ease-out;
 }
+.score-button-container{
+  padding-bottom: 0.5rem;
+}
 
-.team-content h1 {
+.team-content-input {
+  font-size: 1.75rem ;
+  cursor: pointer;
+  text-align: center;
+  padding: .5rem;
+  border-radius:5px;
+  margin: 0rem .75rem 0rem .75rem;
+  width: 80%;
+}
+
+.team-content-input:focus {
+  outline: 2px solid rgb(129, 204, 244);
+}
+
+.team-name {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 3.5rem;
+}
+
+.score {
   font-size: 8rem;
   font-weight: 800;
 }
-
+  
 /* Score Input content ////////////////////////////// */
 .score-limit-container {
   
@@ -65,11 +84,10 @@ body {
   text-align: center;
   font-size: 1.5rem;
   padding: 1rem 0rem 1rem 0rem;
-  /* border: 2px solid; */
 }
 
 .score-limit-container input {
-  width: fit-content;
+  width: 70%;
   outline: none;
   cursor: pointer;
   border-radius: .5rem;
@@ -78,22 +96,15 @@ body {
   text-align: center;
 }
 
-
-/* //////////////////////////////////////////// */
-
+/* //////////////// Timer Section //////////////////////////// */
 
 .timer-container {
   border-radius: 5px;
-  /* position: center; */
-  /* top: 4rem;
-  left: 4rem; */
   text-align: center;
-
   animation-name: moveInBottom;
   animation-duration: 1.25s;
   animation-timing-function: ease-out;
 }
-
 
 .time {
   display: flex;
@@ -110,10 +121,11 @@ body {
 }
 
 .time-controls button {
-  width: 7.65rem;
+  text-align: center;
+  width: 7.75rem;
 }
 
-/* All Button Section with Effects///////////////// */
+/* /////// All Button Section with Effects /////////// */
 .butn {
   border-radius: 10rem;
   font-size: 1.5rem;
@@ -138,7 +150,6 @@ body {
 .button-increment{
   width: 7.5rem;
   font-size: 2rem;
-  /* padding: 0.25rem 0.25rem 0.25rem 2.5rem; */
 }
 
 .button-increment:hover {
@@ -148,52 +159,12 @@ body {
 .button-decrement {
   width: 7.5rem;
   font-size: 2rem;
-  /* padding: 0.25rem 2.5rem 0.25rem 2.5rem; */
 }
 
 .button-decrement:hover{
   background-color: rgb(206, 83, 83);
 }
 
-/* ///////////Team Content Section/////////// */
-.team-content {
-  /* font-size: 8rem; */
-  width: max-content;
-  background-color: #008c76ff;
-  border-radius: 5px;
-  border: 2px solid rgb(42, 42, 42);
-  /* display: inline-block; */
-  /* top: 1rem;
-  left: 1rem; */
-  text-align: center;
-
-  animation-name: moveInTop;
-  animation-duration: 1.25s;
-  animation-timing-function: ease-out;
-}
-
-
-.team-content-input {
-  font-size: 1.75rem ;
-  cursor: pointer;
-  text-align: center;
-  padding: .5rem;
-  border-radius:5px;
-  margin: 0rem .75rem 0rem .75rem;
-  width: 80%;
-}
-.team-content-input:focus {
-  outline: 2px solid rgb(129, 204, 244);
-}
-
-.team-name {
-  font-size: 3.5rem;
-}
-
-.team-content h1 {
-  font-size: 8rem;
-  font-weight: 800;
-}
 
 /* ////////////////////////////Modal Styling Below/////////////////////////// */
 
@@ -207,7 +178,7 @@ body {
 .modal-container{
   box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
   max-width: 40rem;
-  width: 100%;
+  /* width: 100%; */
   padding: 1rem;
   background-color: white;
   font-size: 2.25rem;
@@ -215,7 +186,7 @@ body {
   border-radius: 1rem;
   position: absolute;
   left: 50%;
-  top: 40%;
+  top: 45%;
   transform: translate(-50%, -50%);
   text-shadow: none;
   text-align: center;
@@ -225,7 +196,6 @@ body {
 .button-container {
   margin-top: 2rem;
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
 }
@@ -263,8 +233,7 @@ body {
   background-color: rgb(121, 19, 19);
 }
 
-
-/* Winner Styling Below */
+/*//////////// Winner Styling Below /////////////// */
 
 .victory {
   color: #fcae1e;
@@ -273,7 +242,7 @@ body {
   animation-timing-function: ease-out;
 }
 
-
+/* /////////// ANIMATIONS /////////////// */
 @keyframes moveInTop {
   0% {
     opacity: 0;
@@ -336,5 +305,78 @@ body {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+/* /////////////////// MEDIA QUERIES ////////////// */
+
+@media (max-width:1024px) {
+
+  .score {
+    font-size: 5rem;
+  }
+  .button-decrement{
+    width: 7rem;
+  }
+  .button-increment {
+    width: 7rem;
+  }
+  .team-content-input {
+    font-size: 1.25rem;
+    width: 70%;
+  }
+  .team-name {
+    font-size: 1.75rem;
+  }
+  .score-limit-container{
+    margin-top: -1rem;
+    font-size: 1.1rem;
+  }
+  .score-limit-container input {
+    margin-top: -0.25rem;
+    margin-bottom: .25rem;
+  }
+  .time {
+    margin-top: -1rem;
+    font-size: 1.25rem;
+  }
+  .time-controls {
+    margin-top: -1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .team-cards-container {
+    padding-top: 8rem;
+  }
+  .score {
+    font-size: 8rem;
+  }
+  .button-decrement{
+    width: 6rem;
+  }
+  .button-increment {
+    width: 6rem;
+  }
+  .team-content-input {
+    font-size: 1.1rem;
+    width: 70%;
+  }
+  .team-name {
+    font-size: 2rem;
+  }
+  .score-limit-container{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+  .score-limit-container input {
+    margin-bottom: 0rem;
+  }
+  .time {
+    margin-top: 1rem;
+    font-size: 1.75rem;
+  }
+  .time-controls {
+    margin-top: .5rem;
   }
 }

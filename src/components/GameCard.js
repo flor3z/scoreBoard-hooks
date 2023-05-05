@@ -27,7 +27,6 @@ export function GameCard() {
       setWinner(false);
     } else if (score1 === maxScore || score2 === maxScore) {
       setWinner(true);
-      clearInterval(timerId);
     }
   };
 
@@ -90,6 +89,10 @@ export function GameCard() {
     }
   };
 
+  if (score1 === maxScore || score2 === maxScore) {
+    clearInterval(timerId);
+  }
+
   if (seconds === 0) {
     clearInterval(timerId);
   }
@@ -104,7 +107,6 @@ export function GameCard() {
     clearInterval(timerId);
   };
 
-  const playOrPause = startTimer === false ? 'Play' : 'Pause';
   const secondsRemaining = seconds - convertToMinutes(seconds) * 60;
   //////////////////////////////////////////////////////////////////////
 
@@ -131,6 +133,8 @@ export function GameCard() {
     setOpenModal(false);
     setWinner(false);
   };
+
+  const playOrPause = startTimer === false ? 'Play' : 'Pause';
 
   return (
     <div>
