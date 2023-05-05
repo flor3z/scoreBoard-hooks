@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  overflow: hidden;
   height: 100%;
   background-image: url(../src/img/court.jpg);
   background-size: cover;
@@ -186,7 +185,7 @@ body {
   border-radius: 1rem;
   position: absolute;
   left: 50%;
-  top: 45%;
+  top: 50%;
   transform: translate(-50%, -50%);
   text-shadow: none;
   text-align: center;
@@ -347,7 +346,7 @@ body {
 
 @media (max-width: 420px) {
   .team-cards-container {
-    padding-top: 8rem;
+    padding-top: 5rem;
   }
   .score {
     font-size: 8rem;
