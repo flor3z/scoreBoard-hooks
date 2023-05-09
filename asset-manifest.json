@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/scoreBoard-hooks/static/css/main.8fe8b268.css",
-    "main.js": "/scoreBoard-hooks/static/js/main.db03447b.js",
-    "static/media/court.jpg": "/scoreBoard-hooks/static/media/court.269b2bb54718134d3604.jpg",
+    "main.css": "/scoreBoard-hooks/static/css/main.830fd0c8.css",
+    "main.js": "/scoreBoard-hooks/static/js/main.97a847d3.js",
     "index.html": "/scoreBoard-hooks/index.html",
-    "main.8fe8b268.css.map": "/scoreBoard-hooks/static/css/main.8fe8b268.css.map",
-    "main.db03447b.js.map": "/scoreBoard-hooks/static/js/main.db03447b.js.map"
+    "main.830fd0c8.css.map": "/scoreBoard-hooks/static/css/main.830fd0c8.css.map",
+    "main.97a847d3.js.map": "/scoreBoard-hooks/static/js/main.97a847d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.8fe8b268.css",
-    "static/js/main.db03447b.js"
+    "static/css/main.830fd0c8.css",
+    "static/js/main.97a847d3.js"
   ]
 }
