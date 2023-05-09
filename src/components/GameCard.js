@@ -175,7 +175,7 @@ export function GameCard() {
           <h2>
             {maxScore <= 0
               ? 'Enter max points for game'
-              : `Game will go up to ${maxScore} points`}
+              : `Game set to ${maxScore} points`}
           </h2>
           <form onSubmit={onSubmitMaxScore}>
             <input
