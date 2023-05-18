@@ -17,8 +17,12 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed; */
 
-  background: rgb(96,105,180);
-  background: linear-gradient(180deg, rgba(96,105,180,1) 0%, rgba(238,116,116,1) 100%);
+  /* background: rgb(96,105,180);
+  background: linear-gradient(180deg, rgba(96,105,180,1) 0%, rgba(238,116,116,1) 100%); */
+
+  background: rgb(240,149,89);
+  background: linear-gradient(180deg, rgba(240,149,89,1) 0%, rgba(130,199,250,1) 100%);
+
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
   line-height: 1.7;
@@ -38,9 +42,9 @@ body {
 
 .team-content {
 
-background: rgba(8, 8, 8, 0.45);
+background: rgba(110, 112, 113, 0.65);
 border-radius: 16px;
-box-shadow: 0 4px 30px rgba(40, 39, 39, 0.6);
+box-shadow: 0 4px 30px rgba(255, 255, 255, 0.75);
 border: 1px solid rgba(11, 11, 11, 0.09);
   margin-top: 1rem;
   text-align: center;
@@ -317,7 +321,7 @@ border: 1px solid rgba(11, 11, 11, 0.09);
 
 /* /////////////////// MEDIA QUERIES ////////////// */
 
-@media (max-width:1024px) {
+@media (max-width:915px) {
   .team-cards-container {
     padding-top: 0rem;
   }
@@ -354,6 +358,10 @@ border: 1px solid rgba(11, 11, 11, 0.09);
     margin-top: -1rem;
   }
 }
+
+
+
+
 
 @media (max-width: 420px) {
   .team-cards-container {
